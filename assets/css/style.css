@@ -14,6 +14,7 @@ body {
 
 html {
   font-size: 62.5%;
+  line-height: 2.15rem;
 }
 
 .clear {
@@ -27,6 +28,141 @@ a {
 /*Bỏ đấu chấm của thẻ li*/
 li {
   list-style-type: none;
+}
+
+.header {
+  height: 12.3rem;
+}
+.header .header-contact {
+  height: 3.5rem;
+  background-color: #002147;
+  color: white;
+  padding: 0 18rem;
+}
+.header .header-contact i {
+  font-size: 1.2rem;
+  color: #fdc800;
+}
+.header .header-contact i:not(:first-child) {
+  margin-left: 3.5rem;
+  font-size: 1.5rem;
+}
+.header .header-contact span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+.header .header-contact button {
+  height: 100%;
+  width: 12rem;
+  color: black;
+  background-color: #fdc800;
+  font-weight: 550;
+  border: 1px solid #fdc800;
+  cursor: pointer;
+  margin-left: 57rem;
+  font-size: 1.5rem;
+}
+.header .header-contact button:hover {
+  opacity: 0.8;
+  color: white;
+}
+.header .header-title {
+  height: 8.8rem;
+  background-color: white;
+  padding-left: 18rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+}
+.header .header-title .header-logo {
+  margin-bottom: 1rem;
+}
+.header .header-title .header-logo i {
+  display: inline-block;
+  padding: 0.2rem 1rem;
+  border-radius: 50%;
+  background-color: #002147;
+  color: #fdc800;
+  line-height: 3rem;
+  font-size: 1.3rem;
+  position: absolute;
+}
+.header .header-title .header-logo span {
+  font-size: 2.85rem;
+  margin-left: 4.2rem;
+  font-weight: 550;
+  line-height: 3rem;
+}
+.header .header-title .navbar {
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+}
+.header .header-title .navbar .navbar-text {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 400;
+}
+.header .header-title .navbar .navbar-text:not(:first-child) {
+  margin-left: 3rem;
+}
+.header .header-title .navbar .navbar-text:hover {
+  cursor: pointer;
+  color: #fdc800;
+}
+
+.carousel {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.4) 100%), url(../img/2.jpg);
+  height: 52rem;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.service {
+  padding: 0 18rem;
+  margin-top: -7rem;
+}
+.service .service-item {
+  float: left;
+  width: 33.33%;
+  padding: 0 0.8rem;
+  box-shadow: inset 0px 5px 20px 0px rgba(0, 0, 0, 0.15);
+  height: 30rem;
+}
+.service .service-content {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 3rem 1rem 1rem;
+  font-weight: 300;
+}
+.service .service-content i {
+  color: #fdc800;
+  font-size: 2.8rem;
+}
+.service .service-content h1 {
+  font-size: 1.8rem;
+}
+.service .service-content p {
+  line-height: 3rem;
+}
+.service .service-content button {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  width: 11rem;
+  height: 4rem;
+  color: black;
+  font-weight: bold;
+  background-color: #fdc800;
+  border-radius: 1rem;
+  border: 0.05rem solid white;
+}
+.service .service-content button:hover {
+  cursor: pointer;
+  color: white;
+  opacity: 0.8;
+  transition: all 0.2s ease;
 }
 
 /*# sourceMappingURL=style.css.map */

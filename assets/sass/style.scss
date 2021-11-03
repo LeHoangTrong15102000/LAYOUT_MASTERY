@@ -1,3 +1,11 @@
+$primary-color: #002147;
+$secondary-color: #fdc800;
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,6 +21,7 @@ body {
 
 html {
   font-size: 62.5%;
+  line-height: 2.15rem;
 }
 
 .clear {
@@ -26,4 +35,173 @@ a {
 /*Bỏ đấu chấm của thẻ li*/
 li {
   list-style-type: none;
+}
+
+.header {
+  height: 12.3rem;
+  // background-color: cyan;
+
+  & .header-contact {
+    height: 3.5rem;
+    background-color: $primary-color;
+    color: white;
+    padding: 0 18rem;
+    // line-height: 3.5rem;
+
+    & i {
+      font-size: 1.2rem;
+      // font-weight: 500;
+      color: $secondary-color;
+
+      &:not(:first-child) {
+        margin-left: 3.5rem;
+        font-size: 1.5rem;
+      }
+    }
+
+    & span {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-left: 0.5rem;
+    }
+
+    & button {
+      height: 100%;
+      width: 12rem;
+      color: black;
+      background-color: $secondary-color;
+      font-weight: 550;
+      border: 1px solid $secondary-color;
+      cursor: pointer;
+      margin-left: 57rem;
+      font-size: 1.5rem;
+
+      &:hover {
+        opacity: 0.8;
+        color: white;
+      }
+    }
+  }
+
+  & .header-title {
+    height: calc(12.3rem - 3.5rem);
+    background-color: white;
+    padding-left: 18rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+
+    & .header-logo {
+      margin-bottom: 1rem;
+      // padding-bottom: 0.5rem;
+
+      & i {
+        display: inline-block;
+        padding: 0.2rem 1rem;
+        border-radius: 50%;
+        background-color: $primary-color;
+        color: $secondary-color;
+        line-height: 3rem;
+        font-size: 1.3rem;
+        position: absolute;
+      }
+
+      & span {
+        font-size: 2.85rem;
+        margin-left: 4.2rem;
+        font-weight: 550;
+        line-height: 3rem;
+      }
+    }
+
+    & .navbar {
+      margin-left: 2rem;
+      margin-top: 1.5rem;
+
+      & .navbar-text {
+        font-size: 1.5rem;
+        color: black;
+        font-weight: 400;
+
+        &:not(:first-child) {
+          margin-left: 3rem;
+        }
+
+        &:hover {
+          cursor: pointer;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
+
+.carousel {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4) 100%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    url(../img/2.jpg);
+  height: 52rem;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.service {
+  padding: 0 18rem;
+  margin-top: -7rem;
+
+  // & .service-container {
+  //   margin-left: -2rem;
+  // }
+
+  & .service-item {
+    float: left;
+    width: 33.33%;
+    padding: 0 0.8rem;
+    box-shadow: inset 0px 5px 20px 0px rgb(0 0 0 / 15%);
+    // border: 0.5px solid white;
+    height: 30rem;
+  }
+
+  & .service-content {
+    // font-size: 1rem;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 3rem 1rem 1rem;
+    font-weight: 300;
+
+    & i {
+      color: $secondary-color;
+      font-size: 2.8rem;
+    }
+
+    & h1 {
+      font-size: 1.8rem;
+    }
+
+    & p {
+      line-height: 3rem;
+    }
+
+    & button {
+      font-size: 1.5rem;
+      margin-top: 2.5rem;
+      @include size(11rem, 4rem);
+      color: black;
+      font-weight: bold;
+      background-color: $secondary-color;
+      border-radius: 1rem;
+      border: 0.05rem solid white;
+
+      &:hover {
+        cursor: pointer;
+        color: white;
+        opacity: 0.8;
+        transition: all 0.2s ease;
+      }
+    }
+  }
 }
