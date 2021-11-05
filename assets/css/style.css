@@ -182,8 +182,9 @@ li {
 }
 .introduce .introduce-info p {
   line-height: 2rem;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   margin-top: 5rem;
+  opacity: 0.8;
 }
 .introduce .introduce-info p:not(:first-child) {
   margin-top: 3rem;
@@ -206,6 +207,31 @@ li {
   width: 51rem;
   height: 30rem;
   margin-top: 2.05rem;
+}
+
+.category {
+  margin-top: 12rem;
+  padding: 1rem 17rem;
+}
+.category .category-item {
+  float: left;
+  width: 25%;
+  padding: 1.2rem 1.2rem;
+}
+.category .category-content {
+  background-color: #002147;
+  text-align: center;
+  padding: 3.5rem 3rem;
+  color: white;
+  line-height: 2rem;
+}
+.category .category-content i {
+  font-size: 3.8rem;
+  margin-bottom: 2rem;
+}
+.category .category-content span {
+  font-size: 1.6rem;
+  font-weight: 370;
 }
 
 /*# sourceMappingURL=style.css.map */
