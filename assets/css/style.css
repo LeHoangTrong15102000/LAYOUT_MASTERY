@@ -391,6 +391,7 @@ li {
 }
 .activity .acti-right h1 {
   margin-left: 4rem;
+  font-weight: 520;
 }
 .activity .acti-right button {
   margin-top: 2.5rem;
@@ -407,7 +408,7 @@ li {
   transition: all 0.2s ease;
 }
 .activity .acti-right .right-text {
-  margin-left: 12rem;
+  margin-left: 12.5rem;
 }
 .activity .acti-right .right-text .right-hours {
   position: relative;
@@ -441,12 +442,13 @@ li {
 }
 .activity .acti-right h1 {
   margin-bottom: 5rem;
+  font-weight: 520;
 }
 .activity .acti-right .right-calendar {
   text-align: center;
 }
 .activity .acti-right .right-calendar .right-daymonth {
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
   background-color: #fdc800;
   border-radius: 0.5rem 0.5rem 0 0;
 }
@@ -455,6 +457,64 @@ li {
   background-color: #002147;
   color: white;
   border-radius: 0 0 0.5rem 0.5rem;
+}
+.activity .acti-right .right-calendar h2 {
+  margin-bottom: 1rem;
+}
+
+.footer {
+  padding: 5rem 18rem;
+  background-color: #002147;
+  color: white;
+  height: 40rem;
+}
+.footer .footer-contact {
+  float: left;
+  width: 40%;
+  line-height: 3rem;
+}
+.footer .footer-contact ul {
+  margin-top: 2rem;
+}
+.footer .footer-contact ul i {
+  color: #fdc800;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+.footer .footer-list {
+  float: left;
+  width: 60%;
+}
+.footer .footer-list .footer-nav {
+  float: left;
+  width: 30%;
+}
+.footer .footer-list .footer-nav a {
+  color: white;
+}
+.footer .footer-list .footer-nav ul {
+  line-height: 3.5rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+.footer .footer-list .footer-nav-left {
+  margin-right: 15rem;
+}
+.footer hr {
+  width: 100%;
+  opacity: 0.4;
+  color: #ccc;
+  margin-top: 3rem;
+}
+.footer .footer-copyright {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+}
+.footer .footer-copyright span:nth-of-type(2) {
+  margin-left: 53rem;
+}
+.footer .footer-copyright span:nth-of-type(3) {
+  margin-left: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
