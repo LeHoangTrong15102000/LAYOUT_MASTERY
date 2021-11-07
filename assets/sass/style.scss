@@ -387,6 +387,190 @@ li {
 }
 
 .activity {
+  padding: 10rem 18rem;
+  background-color: #f6f6f6;
+
+  & .acti-left {
+    float: left;
+    width: 50%;
+
+    & button {
+      margin-top: 2.5rem;
+      margin-left: 35.4rem;
+      padding: 1.5rem 3rem;
+      background-color: $secondary-color;
+      border-radius: 3px;
+      border: 1px solid transparent;
+      font-weight: 600;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.7;
+        transition: all 0.2s ease;
+      }
+    }
+
+    & .left-list {
+      padding-right: 3rem;
+    }
+
+    & .left-item {
+      padding: 3rem 2rem;
+      background-color: #fff;
+      // box-shadow: inset 0px 5px 20px 0px rgb(0 0 0 / 15%);
+    }
+
+    & .left-content {
+      margin-top: -0.7rem;
+    }
+
+    & hr {
+      width: 85%;
+      margin-left: 2rem;
+      opacity: 0.3;
+    }
+
+    & .content-left-img {
+      float: left;
+      width: 15%;
+
+      & img {
+        @include size(15rem, 10rem);
+        border-radius: 5px;
+        border: 1px solid transparent;
+      }
+    }
+
+    & .content-left-text {
+      margin-left: 17rem;
+
+      & h3 {
+        font-size: 1.6rem;
+      }
+
+      & span {
+        font-size: 1.5rem;
+        opacity: 0.7;
+      }
+
+      & p {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+      }
+    }
+
+    & h1 {
+      margin-bottom: 5rem;
+    }
+  }
+
+  & .acti-right {
+    float: left;
+    width: 50%;
+
+    & .right-list {
+      padding-left: 4rem;
+    }
+
+    & .right-item {
+      padding: 2rem;
+      background-color: #fff;
+      // box-shadow: inset 0px 5px 20px 0px rgb(0 0 0 / 15%);
+
+      &:not(:first-child) {
+        margin-top: 2rem;
+      }
+    }
+
+    & .right-calendar {
+      float: left;
+      width: 25%;
+    }
+
+    & h1 {
+      margin-left: 4rem;
+    }
+
+    & button {
+      margin-top: 2.5rem;
+      margin-left: 38.3rem;
+      padding: 1.5rem 3rem;
+      background-color: $secondary-color;
+      border-radius: 3px;
+      border: 1px solid transparent;
+      font-weight: 600;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.7;
+        transition: all 0.2s ease;
+      }
+    }
+
+    & .right-text {
+      margin-left: 12rem;
+
+      & .right-hours {
+        position: relative;
+      }
+
+      // Luôn luôn phải có content và display
+      & .right-separate::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 2rem;
+        // border: 1px solid grey;
+        width: 1px;
+        background-color: grey;
+        top: 0;
+        right: -1.2rem;
+        opacity: 0.7;
+      }
+
+      & h3 {
+        font-size: 1.6rem;
+      }
+
+      & p {
+        font-size: 1.4rem;
+        margin-top: 1.5rem;
+      }
+
+      & span {
+        margin-top: 1.5rem;
+      }
+
+      // p cuối cùng trong một div
+      & p:last-child {
+        margin-top: 1.5rem;
+        display: inline-block;
+        margin-left: 2rem;
+        font-size: 1.5rem;
+      }
+    }
+
+    & h1 {
+      margin-bottom: 5rem;
+    }
+
+    & .right-calendar {
+      text-align: center;
+
+      & .right-daymonth {
+        padding: 2rem 2rem;
+        background-color: $secondary-color;
+        border-radius: 0.5rem 0.5rem 0 0;
+      }
+
+      & p {
+        padding: 1rem 3rem;
+        background-color: $primary-color;
+        color: white;
+        border-radius: 0 0 0.5rem 0.5rem;
+      }
+    }
+  }
 }
 
 .contact {
