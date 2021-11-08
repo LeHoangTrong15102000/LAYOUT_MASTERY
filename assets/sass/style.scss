@@ -24,6 +24,11 @@ html {
   line-height: 2.15rem;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .clear {
   clear: both;
 }
